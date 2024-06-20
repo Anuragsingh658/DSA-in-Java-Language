@@ -1,10 +1,13 @@
 public class Star {
-    public static void main(String args[]){
-    for(int line=1; line<=4; line++){
-        for(int star=1; star<=line; star++){
+    public static void SimplePattern(int n){
+    for(int row=1; row<=n; row++){
+        for(int col=1; col <= row; col++){
             System.out.print("*");
         }
         System.out.println();
         }
+    }
+    public static void main(String[] args) {
+        SimplePattern(5);
     }
 }
