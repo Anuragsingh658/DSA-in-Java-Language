@@ -1,11 +1,13 @@
 public class halfpyramid {
-    public static void main(String args[]){
-        int n=4;
-        for(int line=1; line<=n; line++){
-            for(int number=1; number<=line; number++){
-                System.out.print(number);
+    public static void HalfPyramid(int n){
+        for(int row=1; row <= n; row++){
+            for(int col=1; col <= row; col++){
+                System.out.print(col);//col no. will print here
             }
             System.out.println();
         }
+    }
+    public static void main(String[] args) {
+        HalfPyramid(4);
     }
 }
