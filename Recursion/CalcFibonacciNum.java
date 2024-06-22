@@ -1,15 +1,12 @@
 public class CalcFibonacciNum {
-    public static int Fibn(int n){
-        if(n == 0 || n == 1){
+    public static int Fib(int n){
+        if(n < 2){
             return n;
         }
-        int fnm1 = Fibn(n-1);
-        int fnm2 = Fibn(n-2);
-        int fn = fnm1 + fnm2;
-        return fn;
+        return Fib(n - 1) + Fib(n - 2);
     }
     public static void main(String[] args) {
-        int n = 5;
-        System.out.println(Fibn(n));
+        int n = 4;
+        System.out.println(Fib(n));
     }
 }
